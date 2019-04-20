@@ -7,13 +7,13 @@ export default class Navbar extends React.Component {
       <div>
         <Nav defaultActiveKey="/home" as="ul">
           <Nav.Item as="li">
-            <Nav.Link href="/home">Active</Nav.Link>
+            <Nav.Link href="/home">HOME</Nav.Link>
           </Nav.Item>
           <Nav.Item as="li">
-            <Nav.Link eventKey="link-1">Link</Nav.Link>
+            <Nav.Link eventKey="link-1">ABOUT US</Nav.Link>
           </Nav.Item>
           <Nav.Item as="li">
-            <Nav.Link eventKey="link-2">Link</Nav.Link>
+            <Nav.Link eventKey="link-2">LOGIN</Nav.Link>
           </Nav.Item>
         </Nav>
       </div>
