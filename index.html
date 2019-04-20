@@ -2,7 +2,7 @@
 <html lang="en-us">
   <head>
     <meta charset="UTF-8">
-    <title>NoteTaker</title>
+    <title>Pantry</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <style media="screen">
       body {
@@ -56,15 +56,25 @@
       }
     </style>
   </head>
+
   <body>
-    <h1>Mongo Note App</h1>
+    <h1>Into to Node and MongoDB<&#47;h1>
+    <form method="post" action="/addingredient">
+      <label>Enter An Ingredient<&#47;label><br>
+      <input type="text" name="ingredient" placeholder="Enter an ingredient" required>
+      <!-- <input type="text" name="lastName" placeholder="Enter last name..." required> -->
+      <input type="submit" value="Add Ingredent">
+    </form>
+  <body>
+  <!-- <body>
+    <h1>ShelfChef</h1>
     <div id="user-input">
         <p>Ingredient</p>
         <input type="text" id="Ingredient" />
-      <br>
+      <br> -->
         <!-- <p>Note</p>
         <textarea id="note"></textarea> -->
-      <div id="buttons">
+      <!-- <div id="buttons">
         <div id="action-button">
           <button id="make-new">Submit</button>
         </div>
@@ -72,7 +82,7 @@
       </div>
     </div>
 
-    <div id="results"></div>
+    <div id="results"></div> -->
     <script src="app.js"></script>
   </body>
 </html>
