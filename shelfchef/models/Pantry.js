@@ -9,6 +9,6 @@ var PantrySchema = new Schema({
 
 });
 
-var Ingredient = mongoose.model("Ingredient", IngredientsSchema);
+var Pantry = mongoose.model("Ingredient", PantrySchema);
 
 module.exports = Pantry;
