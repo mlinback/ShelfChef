@@ -33,7 +33,7 @@ app.use(express.static("public"));
 // app.use(bodyParser.urlencoded({ extended: true }));
 
 // Connect to the Mongo DB
-mongoose.connect("mongodb://localhost/unit18Populater", { useNewUrlParser: true });
+mongoose.connect("mongodb://localhost/pantry", { useNewUrlParser: true });
 
 var databaseUrl = "pantry";
 var collections = ["ingredient"]
@@ -60,57 +60,37 @@ app.post("/addingredient", function(req, res){
       res.send(saved);
     }
   });
-//  var myData = new Pantry(req.body);
-//  myData.save()
-//  .then(function(item){
-//    res.send("item saved to database");
-//  })
-//  .catch(function(err){
-//    res.status(400).send("unable to save to database");
-//  });
 });
-// app.post("/submit", function(req, res){
-//   console.log(req.body);
 
-//   db.ingredient.insert(req.body, function(error, saved){
-//     if (error) {
-//       console.log(error);
-//     }
-//     else {
-//       res.send(saved);
-//     }
-//   });
-// });
+app.get("/all", function(req, res){
+  db.ingredient.find({}, function(error, found){
+    if (error) {
+      console.log(error);
+    }
+    else {
+      res.json(found);
+    }
+  });
+});
 
-// app.get("/all", function(req, res){
-//   db.ingredient.find({}, function(error, found){
-//     if (error) {
-//       console.log(error);
-//     }
-//     else {
-//       res.json(found);
-//     }
-//   });
-// });
+app.get("/find/:id", function(req, res) {
 
-// app.get("/find/:id", function(req, res) {
-
-//   db.ingredient.findOne(
-//   {
-//     _id: mongojs.ObjectId(req.params.id)
-//   },
-//   function(error, found) {
-//     if (error) {
-//       console.log(error);
-//       res.send(error);
-//     }
-//     else {
-//       console.log(found);
-//       res.send(found);
-//     }
-//   }
-//   );
-// })
+  db.ingredient.findOne(
+  {
+    _id: mongojs.ObjectId(req.params.id)
+  },
+  function(error, found) {
+    if (error) {
+      console.log(error);
+      res.send(error);
+    }
+    else {
+      console.log(found);
+      res.send(found);
+    }
+  }
+  );
+})
 
 // Start the server
 app.listen(PORT, function() {
