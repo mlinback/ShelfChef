@@ -92,6 +92,48 @@ app.get("/find/:id", function(req, res) {
   );
 })
 
+app.post("/update/:id", function(req, res){
+
+  db.ingredient.update(
+    {
+      _id: mongojs.ObjectId(req.params.id,)
+    },
+    {
+      $set: {
+        ingredient: req.body.ingredient,
+        modified: Date.now()
+      }
+    },
+    function(error, edited) {
+      if (error) {
+        console.log(error);
+        res.send(error);
+      }
+      else {
+        console.log(edited);
+        res.send(edited);
+      }
+    }
+  )
+})
+
+app.get("/clearall", function(req, res){
+
+  db.ingredient.remove({}, function(error, response){
+    
+    if(error) {
+      console.log(error);
+      res.send(error);
+    }
+    else {
+      console.log(response);
+      res.send(response);
+    }
+  });
+});
+
+
+
 // Start the server
 app.listen(PORT, function() {
     console.log("App running on port " + PORT + "!");
