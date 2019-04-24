@@ -14,7 +14,7 @@ getResult();
 
 $go.click(function(event){
     event.preventDefault(); 
-    var queryURL = "https://api.edamam.com/search?app_id=f9f1544e&app_key=b4cfa069d95061e8028377fb6e951c1b&from=0&to=6&time=20&q=chicken+cheese+eggs&ingr=5";
+    var queryURL = "https://api.edamam.com/search?q="+ $recipeSearch.val().trim() +"&app_id=6583a79d&app_key=93bec4e601bf90a471e895c23340a574";
     $.ajax({
         url: queryURL,
         method: 'GET'
