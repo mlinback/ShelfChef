@@ -1,14 +1,21 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
-import Navbar from './components/Navbar/Navbar';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Container from 'react-bootstrap/Container';
+import Login from './components/pages/Login';
+
+
 
 class App extends Component {
   render() {
     return (
+      <Router>
       <div>
-    <Navbar />
+      <Container>
+      <Route exact path="/" component={Login} />
+      </Container>
       </div>
+      </Router>
     );
   }
 }
