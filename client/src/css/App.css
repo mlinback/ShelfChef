@@ -60,3 +60,12 @@ h1 {
 p{
   background: aliceblue;
 }
+#formBasicPassword{
+  background: white;
+}
+#formBasicEmail{
+  background: white;
+}
+.text-muted{
+  color: white;
+}
