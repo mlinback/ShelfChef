@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Form from "react-bootstrap/Form";
 
-export default class CreateFrom extends Component {
+export default class CreateForm extends Component {
   render() {
     return (
       <div>
