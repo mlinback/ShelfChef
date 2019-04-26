@@ -1,0 +1,9 @@
+*{
+    background: url(../img/pantry5.png)
+   no-repeat center center fixed;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow: hidden;
+  }

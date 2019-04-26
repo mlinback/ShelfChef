@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
-import '../../css/App.css'
 import Jumbotron from 'react-bootstrap/Jumbotron'
 import Container from 'react-bootstrap/Container'
-
 export default class JumbotronTitle extends Component {
   render() {
     return (

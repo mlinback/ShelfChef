@@ -62,9 +62,12 @@ p{
 }
 #formBasicPassword{
   background: white;
+  width: 50%;
+
 }
 #formBasicEmail{
   background: white;
+  width: 50%;
 }
 .text-muted{
   color: white;

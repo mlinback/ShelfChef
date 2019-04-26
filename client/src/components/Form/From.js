@@ -20,14 +20,14 @@ export default class LoginFrom extends Component {
             <Form.Label></Form.Label>
             <Form.Control type="password" placeholder="Password" />
           </Form.Group>
+          <br>
           <Link
-          to = "/">
+          to = "/login">
           <Button variant="outline-light" type="submit">
             Login
           </Button>
           </Link>
-          <Link 
-          to = "/create" >
+          <Link to = "/create" >
           <Button variant="outline-light" type="submit">
             Create Account
           </Button>
@@ -37,3 +37,4 @@ export default class LoginFrom extends Component {
     );
   }
 }
+
