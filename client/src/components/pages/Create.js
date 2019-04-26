@@ -3,7 +3,7 @@ import Jumbotron from '../Jumbotron/Jumbotron'
 import Form from '../Form/From'
 import Container from 'react-bootstrap/Container'
 import '../../css/App.css'
-import CreateFrom from '../../CreateForm/CreateForm';
+import CreateForm from '../../CreateForm/CreateForm';
 
 
 export default class Login extends Component {
@@ -12,7 +12,7 @@ export default class Login extends Component {
       <div>
         <Container />
         <Jumbotron />
-        <CreateFrom />
+        <CreateForm />
         <Form /> 
       </div>
     )
