@@ -75,4 +75,9 @@ p{
 
 .form-control {
   background: white;
+  width: 50%;
+  
+}
+#button {
+  margin-right: 2%;
 }

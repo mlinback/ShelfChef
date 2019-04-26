@@ -12,18 +12,13 @@ export default class LoginFrom extends Component {
           <Form.Group controlId="formBasicEmail">
             <Form.Label></Form.Label>
             <Form.Control type="email" placeholder="Enter email" />
-            <Form.Text className="text-muted">
-            </Form.Text>
-          </Form.Group>
-
-          <Form.Group controlId="formBasicPassword">
             <Form.Label></Form.Label>
             <Form.Control type="password" placeholder="Password" />
           </Form.Group>
-          <br>
+          <br />
           <Link
           to = "/login">
-          <Button variant="outline-light" type="submit">
+          <Button id="button" variant="outline-light" type="submit">
             Login
           </Button>
           </Link>
