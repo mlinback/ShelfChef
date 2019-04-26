@@ -1,14 +1,16 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import Navbar from '../Navbar/Navbar.js';
-import Container from 'react-bootstrap/Container'
+import Jumbotron from '../Jumbotron2/Jumbotron2.js';
+
+
 
 
 export default class Nav extends Component {
     render() {
       return (
-        <div>
+        <div className = "home">
         <Navbar />
-        <Container />
+        <Jumbotron />
       </div>
       );
     }

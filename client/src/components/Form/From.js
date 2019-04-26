@@ -16,6 +16,7 @@ export default class LoginForm extends Component {
             <Form.Control type="password" placeholder="Password" />
           </Form.Group>
           <br />
+          <div className='buttons'>
           <Link
           to = "/login">
           <Button id="button" variant="outline-light" type="submit">
@@ -27,6 +28,7 @@ export default class LoginForm extends Component {
             Create Account
           </Button>
           </Link>
+          </div>
         </Form>
       </div>
     );

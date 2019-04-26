@@ -1,83 +1,83 @@
-*{
+.create{
   background: url(../img/board.jpg)
- no-repeat center center fixed;
-  -moz-background-size: cover;
-  -webkit-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  /* overflow: hidden; */
-}
+  no-repeat; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background-size:  100%; }
+
+.home{
+  background: url(../img/pantry5.png)
+  no-repeat; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background-size:  100%; }
+
+.login{
+  background: url(../img/pantry5.png)
+  no-repeat; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background-size:  100%; }
 
 .App {
   text-align: center;
 }
 
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-
-}
-
-.App-header {
-  background-color: #282c34;
-  /* min-height: 100vh; */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 #fluid{
-  margin-top: 10px;
+  margin-top: 30px;
   background: url(../img/leftShelfChef.png);
-  background-size: 100% 100%;
-  /* background-size: 100%; */
+  background-size: 100%;
   background-color: #282c34;
   height: 400px;
+  width: 60%;
+  margin: 0% auto;
+  text-align: center;
+  border-radius: 10px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
-#container{
-  background: aliceblue;
-}
-h1 {
-  background: aliceblue;
-}
-p{
-  background: aliceblue;
-}
-#formBasicPassword{
-  background: white;
-  width: 50%;
 
-}
+
 #formBasicEmail{
   background: white;
-  width: 50%;
+  width: 350px;
+  margin: auto;
 }
+
+.buttons{
+  width: 350px;
+  margin: auto;
+
+}
+#button {
+  margin-right: 2%;
+}
+.NavButton{
+  size: 100px;
+  color: black;
+}
+
 .text-muted{
   color: white;
 }
 
 .form-control {
   background: white;
-  width: 50%;
+  width: 350px;
+  margin: auto;
   
 }
-#button {
-  margin-right: 2%;
+.img{
+  content: url(../img/wrappedlogo.png);
+  width: 50%;
+  left: 0%;
+  background-color: transparent;
+  position: fixed;
+  margin-top: 5%;
+}
+.homeContainer{
+  position: fixed;
+  right: 0%;
+  width: 50%;
+  margin-top: 10%;
+  color: aliceblue;
+  text-shadow: 3px 3px 8px black;
+}
+#homeJumbo{
+  background-color: transparent;
+}
+a{
+color: purple;
+font-size: 25px;
 }
