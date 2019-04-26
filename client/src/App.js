@@ -1,8 +1,12 @@
 import React, { Component } from 'react';
 import './css/App.css';
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import'./css/home.css';
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import Container from 'react-bootstrap/Container';
 import Login from './components/pages/Login';
+import Navbar from './components/pages/Home';
+
+
 
 
 
@@ -12,7 +16,8 @@ class App extends Component {
       <Router>
       <div>
       <Container>
-      <Route exact path="/" component={Login} />
+      <Navbar />
+      <Route exact path="/login" component={Login} />
       </Container>
       </div>
       </Router>

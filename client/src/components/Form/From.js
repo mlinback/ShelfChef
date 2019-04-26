@@ -19,6 +19,7 @@ export default class LoginFrom extends Component {
             <Form.Label></Form.Label>
             <Form.Control type="password" placeholder="Password" />
           </Form.Group>
+          <br></br>
           <Button variant="outline-light" type="submit">
             Login
           </Button>

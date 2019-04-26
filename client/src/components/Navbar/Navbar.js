@@ -1,21 +1,25 @@
-import React from "react";
-import Nav from "react-bootstrap/Nav";
+import React, { Component } from 'react'
+import '../../css/home.css'
+import Nav from "react-bootstrap/Nav"
+import Container from 'react-bootstrap/Container'
 
-export default class Navbar extends React.Component {
+export default class Navbar extends Component {
   render() {
     return (
       <div>
-        <Nav defaultActiveKey="/home" as="ul">
-          <Nav.Item as="li">
+        <Nav className = "justify-content-center" variant="pills" defaultActiveKey="/home">
+          <Nav.Item>
             <Nav.Link href="/home">HOME</Nav.Link>
           </Nav.Item>
-          <Nav.Item as="li">
-            <Nav.Link eventKey="link-1">ABOUT US</Nav.Link>
+          <Nav.Item>
+            <Nav.Link href="/login">LOGIN</Nav.Link>
           </Nav.Item>
-          <Nav.Item as="li">
-            <Nav.Link eventKey="link-2">LOGIN</Nav.Link>
+          <Nav.Item>
+            <Nav.Link href="link-2">SIGN UP!</Nav.Link>
           </Nav.Item>
         </Nav>
+        <Container id="container2">
+        </Container>
       </div>
     );
   }
