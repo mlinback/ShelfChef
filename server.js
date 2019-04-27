@@ -39,102 +39,102 @@ mongoose.connect(
     useNewUrlParser: true
   });
 
-var databaseUrl = "pantry";
-var collections = ["ingredient"]
+// var databaseUrl = "pantry";
+// var collections = ["ingredient"]
 
-var db = mongojs(databaseUrl, collections);
+// var db = mongojs(databaseUrl, collections);
 
-db.on("error", function(error) {
-  console.log("Database Error:", error);
-});
+// db.on("error", function(error) {
+//   console.log("Database Error:", error);
+// });
 
-app.get("/home", function(req, res){
-  res.sendFile(path.join(__dirname + "/index.html"));
-});
+// app.get("/home", function(req, res){
+//   res.sendFile(path.join(__dirname + "/index.html"));
+// });
 
-app.post("/addingredient", function(req, res){
-  console.log(req.body);
+// app.post("/addingredient", function(req, res){
+//   console.log(req.body);
 
-  db.ingredient.insert(req.body, function(error, saved) {
+//   db.ingredient.insert(req.body, function(error, saved) {
     
-    if (error) {
-      console.log(error);
-    }
-    else {
-      res.send(saved);
-    }
-  });
-});
+//     if (error) {
+//       console.log(error);
+//     }
+//     else {
+//       res.send(saved);
+//     }
+//   });
+// });
 
-app.get("/all", function(req, res){
-  db.ingredient.find({}, function(error, found){
-    if (error) {
-      console.log(error);
-    }
-    else {
-      res.json(found);
-    }
-  });
-});
+// app.get("/all", function(req, res){
+//   db.ingredient.find({}, function(error, found){
+//     if (error) {
+//       console.log(error);
+//     }
+//     else {
+//       res.json(found);
+//     }
+//   });
+// });
 
-app.get("/find/:id", function(req, res) {
+// app.get("/find/:id", function(req, res) {
 
-  db.ingredient.findOne(
-  {
-    _id: mongojs.ObjectId(req.params.id)
-  },
-  function(error, found) {
-    if (error) {
-      console.log(error);
-      res.send(error);
-    }
-    else {
-      console.log(found);
-      res.send(found);
-    }
-  }
-  );
-})
+//   db.ingredient.findOne(
+//   {
+//     _id: mongojs.ObjectId(req.params.id)
+//   },
+//   function(error, found) {
+//     if (error) {
+//       console.log(error);
+//       res.send(error);
+//     }
+//     else {
+//       console.log(found);
+//       res.send(found);
+//     }
+//   }
+//   );
+// })
 
-app.post("/update/:id", function(req, res){
+// app.post("/update/:id", function(req, res){
 
-  db.ingredient.update(
-    {
-      _id: mongojs.ObjectId(req.params.id,)
-    },
-    {
-      $set: {
-        ingredient: req.body.ingredient,
-        modified: Date.now()
-      }
-    },
-    function(error, edited) {
-      if (error) {
-        console.log(error);
-        res.send(error);
-      }
-      else {
-        console.log(edited);
-        res.send(edited);
-      }
-    }
-  )
-})
+//   db.ingredient.update(
+//     {
+//       _id: mongojs.ObjectId(req.params.id,)
+//     },
+//     {
+//       $set: {
+//         ingredient: req.body.ingredient,
+//         modified: Date.now()
+//       }
+//     },
+//     function(error, edited) {
+//       if (error) {
+//         console.log(error);
+//         res.send(error);
+//       }
+//       else {
+//         console.log(edited);
+//         res.send(edited);
+//       }
+//     }
+//   )
+// })
 
-app.get("/clearall", function(req, res){
+// app.get("/clearall", function(req, res){
 
-  db.ingredient.remove({}, function(error, response){
+//   db.ingredient.remove({}, function(error, response){
     
-    if(error) {
-      console.log(error);
-      res.send(error);
-    }
-    else {
-      console.log(response);
-      res.send(response);
-    }
-  });
-});
+//     if(error) {
+//       console.log(error);
+//       res.send(error);
+//     }
+//     else {
+//       console.log(response);
+//       res.send(response);
+//     }
+//   });
+// });
 
 
 
