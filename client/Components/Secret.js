@@ -1,12 +1,11 @@
 // import React, {Component} from "react";
 
-// export default class Callback extends Component {
+// export default class Secret extends Component {
 //     render() {
 //         return (
 //             <div>
-//                 Loading...
+//                 Oops, this is a super secret area 
 //             </div>
 //         )
-
 //     }
 // }
