@@ -139,6 +139,6 @@ app.get("/clearall", function(req, res){
 
 
 // Start the server
-app.listen(PORT, function() {
+app.listen(process.env.PORT || 3001, function() {
     console.log("App running on port " + PORT + "!");
   });
