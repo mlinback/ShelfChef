@@ -14,7 +14,7 @@ var cheerio = require("cheerio");
 // Require all models
 // var db = require("./models");
 
-var PORT = 3001;
+var PORT = process.env.PORT || 3001;
 
 // Initialize Express
 var app = express();
@@ -33,7 +33,11 @@ app.use(express.static("public"));
 // app.use(bodyParser.urlencoded({ extended: true }));
 
 // Connect to the Mongo DB
-mongoose.connect("mongodb://localhost/pantry", { useNewUrlParser: true });
+mongoose.connect(
+  process.env.MONGODB_URI || "mongodb://localhost/pantry",
+  {
+    useNewUrlParser: true
+  });
 
 var databaseUrl = "pantry";
 var collections = ["ingredient"]
