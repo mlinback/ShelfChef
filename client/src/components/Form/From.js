@@ -18,7 +18,7 @@ export default class LoginForm extends Component {
           <br />
           <div className='buttons'>
           <Link
-          to = "/login">
+          to = "/pantry">
           <Button id="button" variant="outline-light" type="submit">
             Login
           </Button>
