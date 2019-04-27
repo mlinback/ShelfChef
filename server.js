@@ -27,7 +27,10 @@ app.use(logger("dev"));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 // Make public a static folder
-app.use(express.static("public"));
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static("client/build"));
+}
+// app.use(express.static("public"));
 
 // app.use(bodyParser.json());
 // app.use(bodyParser.urlencoded({ extended: true }));
