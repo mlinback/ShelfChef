@@ -10,7 +10,7 @@ export default class JumbotronTitle extends Component {
         <div className = "img"/>
           <Container className = "homeContainer">
             <h2>
-            Let ShelfChef help you plan your next meal with the following easy steps. Create a free. Save items to your online pantry. Search recipes based on your pantry's contents and filter based off dietary restrictions.
+            Let ShelfChef help you plan your next meal with the following easy steps. Create a free account. Save items to your online pantry. Search recipes based on your pantry's contents and filter based off dietary restrictions.
             </h2>
             <br />
             <h2>"Not everyone can become a great chef, but a great chef can come from anywhere"</h2>
