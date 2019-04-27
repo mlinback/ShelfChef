@@ -14,6 +14,15 @@
   text-align: center;
 }
 
+.pantry {
+  background: url(../img/board.jpg)
+  no-repeat; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background-size:  100%;
+}
+
+.search {
+  margin-left: 38%;
+}
+
 #fluid{
   margin-top: 30px;
   background: url(../img/leftShelfChef.png);

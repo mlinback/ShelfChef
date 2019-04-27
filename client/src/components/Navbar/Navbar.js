@@ -16,6 +16,9 @@ export default class Navbar extends Component {
           <Nav.Item>
             <Nav.Link href="/create">SIGN UP!</Nav.Link>
           </Nav.Item>
+          <Nav.Item>
+            <Nav.Link href="/pantry">PANTRY</Nav.Link>
+          </Nav.Item>
         </Nav>
       </div>
     );
