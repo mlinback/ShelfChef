@@ -8,7 +8,7 @@ export default class Navbar extends Component {
       <div>
         <Nav className="justify-content-center" defaultActiveKey="/home">
           <Nav.Item className ="NavButton">
-            <Nav.Link href="/home">HOME</Nav.Link>
+            <Nav.Link href="/">HOME</Nav.Link>
           </Nav.Item>
           <Nav.Item>
             <Nav.Link href="/login">LOGIN</Nav.Link>
