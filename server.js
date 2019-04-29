@@ -51,9 +51,9 @@ mongoose.connect(
 //   console.log("Database Error:", error);
 // });
 
-// app.get("/home", function(req, res){
-//   res.sendFile(path.join(__dirname + "/index.html"));
-// });
+app.get("/home", function(req, res){
+  res.sendFile(path.join(__dirname + "/index.html"));
+});
 
 // app.post("/addingredient", function(req, res){
 //   console.log(req.body);
