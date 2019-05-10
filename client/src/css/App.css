@@ -1,13 +1,13 @@
 .create{
-  background: url(../img/board.jpg)
+  background: url(../img/pantry4.png)
   no-repeat; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background-size:  100%; }
 
 .home{
-  background: url(../img/board.jpg)
+  background: url(../img/pantry5.png)
   no-repeat; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background-size:  100%; }
 
 .login{
-  background: url(../img/board.jpg)
+  background: url(../img/pantry4.png)
   no-repeat; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background-size:  100%; }
 
 .App {
@@ -15,7 +15,7 @@
 }
 
 .pantry {
-  background: url(../img/board.jpg)
+  background: url(../img/pantry3.png)
   no-repeat; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background-size:  100%;
 }
 
@@ -29,18 +29,12 @@
   margin-left: 37%
 }
 
-#fluid{
-  margin-top: 30px;
-  background: url(../img/leftShelfChef.png);
-  background-size: 100%;
-  background-color: #282c34;
-  height: 300px;
-  width: 60%;
-  margin: 0% auto;
-  text-align: center;
-  border-radius: 10px;
-  margin-top: 30px;
-  margin-bottom: 30px;
+#ShelfLogo{
+  content: url(../img/wrappedlogo.png);
+  size: 20%;
+  background-color: transparent;
+  margin-top: 5%;
+  margin: auto;
 }
 
 
@@ -57,6 +51,7 @@
 }
 #button {
   margin-right: 2%;
+  background-color: purple;
 }
 .NavButton{
   size: 100px;
@@ -77,7 +72,7 @@
   content: url(../img/wrappedlogo.png);
   width: 50%;
   left: 0%;
-  background-color: transparent;
+  style:text-shadow;
   position: fixed;
   margin-top: 5%;
 }

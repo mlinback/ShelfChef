@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Container from 'react-bootstrap/Container';
+import Nav from "react-bootstrap/Nav";
 import Login from './components/pages/Login';
 import Home from './components/pages/Home';
 import Create from './components/pages/Create';
